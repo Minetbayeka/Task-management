@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../../assets/image/auth.png'
+import image from '../../assets/image/happy.jpg'
 import RegistrationForm from './components/RegistrationForm'
 
 

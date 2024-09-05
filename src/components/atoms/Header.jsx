@@ -31,6 +31,9 @@ const Header = () => {
                 <Link to="/">Contact</Link>
               </li>
               <li className="whitespace-nowwrap hover:text-#FF7E1B">
+                <Link to="/tasks">Members</Link>
+              </li>
+              <li className="whitespace-nowwrap hover:text-#FF7E1B">
                 <Link to="/Login">Login</Link>
               </li>
 

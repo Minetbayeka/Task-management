@@ -1,15 +1,19 @@
 import Layout from "../layouts/Layout";
 
 import {createBrowserRouter} from "react-router-dom"
-import Home from "../pages/Home/Home";
+// import Home from "../pages/Home/Home";
 import Register from "../pages/Authentication/Register";
 import Login from "../pages/Authentication/login";
 import Tasks from "../pages/tasks/TaskList"
 
 const children = [
-    { element: <Home />,
 
-     path: "/" },
+  { element: <Tasks />,
+
+    path: "/" },
+    // { element: <Home />,
+
+    //  path: "/" },
 
      { element: <Register />,
 
@@ -19,9 +23,9 @@ const children = [
 
         path: "/login" },
 
-        { element: <Tasks />,
+        // { element: <Tasks />,
 
-            path: "/tasks" }
+        //     path: "/tasks" }
         
 
 

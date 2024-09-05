@@ -1,6 +1,6 @@
 
 import React from 'react'
-import image from '../../assets/image/auth.png'
+import image from '../../assets/image/happy.jpg'
 import LoginForm from './components/LoginForm'
 
 function Login() {

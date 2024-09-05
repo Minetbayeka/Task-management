@@ -10,7 +10,7 @@ function LoginForm() {
         className="flex flex-col gap-8 w-full p-8 lg:p-0"
       >
         <div className="flex flex-col gap-4">
-          <p className="text-4xl font-medium">Log in to Exclusive</p>
+          <p className="text-4xl font-medium">Log in to Sneaker</p>
           <p className="font-medium"> Enter your details below </p>
         </div>
         <div className="flex flex-col gap-4">
