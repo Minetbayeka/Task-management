@@ -9,24 +9,28 @@ import MyAbout from "../pages/about/About";
 
 const ContextProvider = ({children}) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const ButtonIn = () => {
-   console.log("user just click the button")
-    setIsLoggedIn(true)
- }
+  const logOut = () => {
+    console.log("User is loggin out.....");
+    setIsLoggedIn(false);
+  };
 
-const userAuth = {
-    isLoggedIn,
-    setIsLoggedIn,
-    ButtonIn
-}
+  const logIn = () => {
+    console.log("User is loggin out.....");
+    setIsLoggedIn(false);
+  };
+
+
 
   return (
     <AppContext.Provider
-    value={userAuth}
-    //   value={{
-    //     isLoggedIn: isLoggedIn,
-    //     ButtonIn: ButtonIn
-    //   }}
+    value={
+      {
+        isLoggedIn: isLoggedIn,
+        logOut: logOut,
+        logIn: logIn,
+      }
+    }
+    
     >
        {children} 
       <MyAbout/>
@@ -36,10 +40,10 @@ const userAuth = {
 
 export default ContextProvider;
 
-// export const AppProvider = () => {
-//   <Provider store={store}>
-//     <ContextProvider>
-//       <RouterProvider router={router}></RouterProvider>
-//     </ContextProvider>
-//   </Provider>;
-// };
+export const AppProvider = () => {
+  <Provider store={store}>
+    <ContextProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </ContextProvider>
+  </Provider>;
+};
